@@ -1,23 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <RootNamespace>System.Waf.UnitTesting</RootNamespace>
     <Description>System.Waf is a lightweight framework that helps you to create well-structured XAML applications. This package supports writing unit tests. It can be used in various application types.</Description>
   </PropertyGroup>
-
   <ItemGroup Condition="$(TargetFramework.StartsWith(net4))">
     <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
-
   <ItemGroup Condition="$(TargetFramework.StartsWith(netstandard))">
     <PackageReference Include="System.ComponentModel.Annotations" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\System.Waf.Core\System.Waf.Core.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <InternalsVisibleTo Include="System.Waf.Core.Test"/>
+    <InternalsVisibleTo Include="System.Waf.Core.Test" />
   </ItemGroup>
 </Project>

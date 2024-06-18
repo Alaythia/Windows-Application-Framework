@@ -1,17 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net472;net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net8.0-windows</TargetFrameworks>
     <RootNamespace>Test.Waf</RootNamespace>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup Condition="$(TargetFramework.StartsWith(net4))">
-    <Reference Include="System.ComponentModel.Composition" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-  </ItemGroup>
-
   <ItemGroup>
+    <ProjectReference Include="..\System.Waf.UnitTesting.Core\System.Waf.UnitTesting.Core.csproj" />
     <ProjectReference Include="..\System.Waf.UnitTesting.Wpf\System.Waf.UnitTesting.Wpf.csproj" />
+    <ProjectReference Include="..\System.Waf.Wpf\System.Waf.Wpf.csproj" />
   </ItemGroup>
 </Project>

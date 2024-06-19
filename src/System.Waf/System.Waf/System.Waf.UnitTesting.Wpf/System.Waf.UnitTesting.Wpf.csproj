@@ -15,6 +15,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Serilog" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\System.Waf.Core\System.Waf.Core.csproj" />
     <ProjectReference Include="..\System.Waf.Wpf\System.Waf.Wpf.csproj" />
     <ProjectReference Include="..\System.Waf.UnitTesting.Core\System.Waf.UnitTesting.Core.csproj" />

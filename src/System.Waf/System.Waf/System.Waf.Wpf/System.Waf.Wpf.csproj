@@ -12,6 +12,7 @@
     <ProjectReference Include="..\System.Waf.Core\System.Waf.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Serilog" />
     <PackageReference Include="System.ComponentModel.Composition" />
   </ItemGroup>
 </Project>

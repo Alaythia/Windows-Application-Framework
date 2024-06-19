@@ -10,4 +10,7 @@
   <ItemGroup>
     <InternalsVisibleTo Include="System.Waf.Core.Test" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Serilog" />
+  </ItemGroup>
 </Project>

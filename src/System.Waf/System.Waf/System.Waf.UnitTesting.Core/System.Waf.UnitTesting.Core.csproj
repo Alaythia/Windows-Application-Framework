@@ -11,9 +11,6 @@
     <PackageReference Include="System.ComponentModel.Annotations" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\System.Waf.Core\System.Waf.Core.csproj" />
-  </ItemGroup>
-  <ItemGroup>
     <InternalsVisibleTo Include="System.Waf.Core.Test" />
   </ItemGroup>
   <ItemGroup>
